@@ -1,0 +1,101 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: linear-gradient(135deg, #89CFF0 0%, #4682B4 100%);
+  font-family: 'Montserrat', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  animation: fadeIn 1s ease-in;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.form-container {
+  background: #f0f8ff;
+  padding: 2.5rem 3rem;
+  border-radius: 20px;
+  box-shadow: 0 12px 40px rgba(0, 0, 139, 0.15); /* sombra azul */
+  width: 100%;
+  max-width: 440px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.form-container:hover {
+  transform: translateY(-5px);
+}
+
+h1 {
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+  color: #0b3d91;
+}
+
+label {
+  display: block;
+  margin: 12px 0 5px;
+  font-weight: 600;
+  color: #1e3c72;
+  text-align: left;
+}
+
+input[type="text"],
+input[type="email"] {
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid #a9cce3;
+  font-size: 1rem;
+  margin-bottom: 15px;
+  transition: border 0.3s;
+}
+
+input:focus {
+  border-color: #2980b9;
+  outline: none;
+}
+
+button {
+  width: 100%;
+  padding: 14px;
+  background-color: #2980b9;
+  color: white;
+  border: none;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: #1c5980;
+  transform: scale(1.02);
+}
+
+#mensaje {
+  margin-top: 15px;
+  font-size: 1rem;
+  color: #154360;
+}
+
+footer {
+  margin-top: 20px;
+  font-size: 0.8rem;
+  color: #566573;
+}
+
+@media (max-width: 500px) {
+  .form-container {
+    padding: 2rem;
+  }
+}
